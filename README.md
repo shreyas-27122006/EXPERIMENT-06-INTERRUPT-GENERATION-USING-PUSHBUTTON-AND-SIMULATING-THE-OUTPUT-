@@ -11,12 +11,14 @@ STM32 CUBE IDE, Proteus 8 simulator.
 ARM v7 Core supports multiple great features for handling exceptions and interrupts. Which includes the Nested Vectored Interrupt Controller (NVIC).
 
 Micro-Coded Architecture So that interrupt stacking, entry, and exit are done automatically in hardware. Which offloads this work overhead from the CPU
-### Processor Mode
+### Processor Mode:
 
 The processor mode can change when exceptions occur. And it can be in one of the following modes:
 Thread Mode: Which is entered on reset.
 Handler Mode: Which is entered on all other exceptions.
+
 ![image](https://github.com/vasanthkumarch/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/36288975/4f52f2d6-4cdb-4315-b2b2-b55dc1639c43)
+
 The STM32 ARM microcontroller interrupts are generated in the following manner:
 
 The system runs the ISR and then goes back to the main program. The NVIC and EXTI are configured. The Interrupt Service Routine (ISR) also known as the interrupt service routine handler is defined to enable the external interrupts.
